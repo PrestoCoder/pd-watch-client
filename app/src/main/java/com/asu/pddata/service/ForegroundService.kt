@@ -146,7 +146,7 @@ class ForegroundService : Service(), SensorEventListener {
                     if (file.delete()) {
                         Log.v("Cloud", "File deleted after successful upload: ${file.name}")
                     } else {
-                        Log.e("Cloud", "Failed to delete file after upload: ${file.name}")
+//                        Log.e("Cloud", "2-Failed to delete file after upload: ${file.name}")
                     }
                 },
                 onFailure = { exception ->
@@ -388,7 +388,7 @@ class ForegroundService : Service(), SensorEventListener {
                         if (csvFile.delete()) {
                             Log.v("Cloud", "File deleted: ${csvFile.name}")
                         } else {
-                            Log.e("Cloud", "Failed to delete file: ${csvFile.name}")
+//                            Log.e("Cloud", "1-Failed to delete file: ${csvFile.name}")
                         }
                     },
                     onFailure = { exception ->
